@@ -1,0 +1,43 @@
+////
+<style>
+  @media (max-height: 800px) {
+  p {
+    font-size: 10px;
+  }
+  }  
+</style>
+
+////
+<!--The max-width property of 100% scales the image to fit the width of its container, 
+  but the image won't stretch wider than its original width. 
+  Setting the display property to block changes the image from an inline element 
+  (its default), to a block element on its own line. 
+  The height property of auto keeps the original aspect ratio of the image.-->
+<style>
+  img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+</style>
+
+//// Retina setting: define their width and height values as only half of what the original file is
+<style>
+  img { height: 100px; width: 100px; }
+</style>
+
+////
+<!--
+  vw: 10vw would be 10% of the viewport's width.
+  vh: 3vh would be 3% of the viewport's height.
+  vmin: 70vmin would be 70% of the viewport's smaller dimension (height vs. width).
+  vmax: 100vmax would be 100% of the viewport's bigger dimension (height vs. width).
+-->
+<style>
+  h2 {
+      width: 80vw;
+  }
+  p {
+      width: 75vmin; 
+  }
+</style>

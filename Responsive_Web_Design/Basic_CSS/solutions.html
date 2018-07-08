@@ -1,0 +1,417 @@
+////
+<h2 style="color: red;">CatPhotoApp</h2>
+
+////
+<style>
+    h2 {color: blue;} 
+  </style>
+  
+<h2>CatPhotoApp</h2>
+
+////
+<style>
+    .red-text {
+      color: red;
+    }
+</style>
+  
+<h2 class="red-text">CatPhotoApp</h2>
+<p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
+
+////
+<style>
+    .red-text {
+      color: red;
+    }
+  
+    p {
+      font-size: 16px;
+      font-family: monospace;
+    }
+</style>
+
+////
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+<style>
+  .red-text {
+    color: red;
+  }
+  p {
+    font-size: 16px;
+    font-family: monospace;
+  }
+  h2 {
+    font-family: Lobster;
+  }
+</style>
+
+////
+<!-- <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+-->
+<style>
+    .red-text {
+      color: red;
+    }
+    h2 {
+      font-family: Lobster, monospace;
+    }
+    p {
+      font-size: 16px;
+      font-family: monospace;
+    }
+</style>
+
+////
+<style>
+  .smaller-image {
+    width: 100px;
+  }
+</style>
+<main>  
+  <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" 
+    alt="A cute orange cat lying on its back." class="smaller-image"></a>
+
+////
+<style>
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    border-radius: 50%;
+  }
+</style>  
+<a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+
+////
+<h2 id="cat-photo-app"></h2>
+
+////
+<style>
+    .red-box {
+      background-color: crimson;
+      color: #fff;
+      padding: 20px;
+      margin: 20px;
+    }
+  
+    .blue-box {
+      background-color: blue;
+      color: #fff;
+      padding: 20px;
+      margin: 20px;
+    }
+</style>
+
+////
+<style>
+    .red-box {
+      background-color: crimson;
+      color: #fff;
+      padding: 20px;
+      margin: -15px;
+    }
+  
+    .blue-box {
+      background-color: blue;
+      color: #fff;
+      padding: 20px;
+      margin: -15px;
+    }
+</style>
+
+////
+<style>
+    .blue-box {
+      background-color: blue;
+      color: #fff;
+      padding-top: 40px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      padding-left: 40px;
+    }
+</style>
+
+
+////
+<style>
+    .blue-box {
+        background-color: blue;
+        color: #fff;
+        padding-top: 40px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+
+        margin-top: 40px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        margin-left: 40px;
+    }
+</style>
+
+//// Clockwise Notation
+<style>
+    .blue-box {
+      background-color: blue;
+      color: #fff;
+      padding: 40px 20px 20px 40px;
+    }
+</style>
+
+////
+<style>
+    .blue-box {
+      background-color: blue;
+      color: #fff;
+      margin: 40px 20px 20px 40px;
+    }
+</style>
+
+////
+<style>
+  [type='checkbox'] {
+  margin: 10px 0px 15px 0px;
+}
+</style>
+
+////
+<style>
+    .red-box {
+      background-color: red;
+      margin: 20px 40px 20px 40px;
+      padding: 1.5em
+    }
+</style>
+
+//// all your other elements will inherit your body element's styles.
+<style>
+    body {
+      background-color: black;
+      color: green; 
+      font-family: monospace;
+    }
+  </style>
+  
+  <h1>Hello World</h1>
+
+  //// Override
+  <style>
+    body {
+      background-color: black;
+      font-family: monospace;
+      color: green;
+    }
+    .pink-text {
+      color: pink;
+    }
+  </style>
+  <h1 class="pink-text">Hello World!</h1>
+
+  ////
+  <style>
+    body {
+      background-color: black;
+      font-family: monospace;
+      color: green;
+    }
+    .pink-text {
+      color: pink;
+    }
+    .blue-text {
+      color: blue;
+    }
+  </style>
+  <h1 class="pink-text blue-text">Hello World!</h1>
+
+  //// id attribute will always take precedence
+  <style>
+    body {
+      background-color: black;
+      font-family: monospace;
+      color: green;
+    }
+    #orange-text {
+      color: orange;
+    }
+    .pink-text {
+      color: pink;
+    }
+    .blue-text {
+      color: blue;
+    }
+  </style>
+  <h1 class="pink-text blue-text" id="orange-text" >Hello World!</h1>
+
+  //// Override Class Declarations with Inline Styles
+  <style>
+    body {
+      background-color: black;
+      font-family: monospace;
+      color: green;
+    }
+    #orange-text {
+      color: orange;
+    }
+    .pink-text {
+      color: pink;
+    }
+    .blue-text {
+      color: blue;
+    }
+  </style>
+  <h1 style="color: white" id="orange-text" class="pink-text blue-text">Hello World!</h1>
+
+//// !important
+<style>
+    body {
+      background-color: black;
+      font-family: monospace;
+      color: green;
+    }
+    #orange-text {
+      color: orange;
+    }
+    .pink-text {
+      color: pink !important;
+    }
+    .blue-text {
+      color: blue;
+    }
+</style>
+<h1 id="orange-text" class="pink-text blue-text" style="color: white">Hello World!</h1>
+
+//// RGB
+<style>
+    body {
+      background-color: #000000;
+    }
+</style>
+
+/////
+<style>
+    .red-text {
+      color: #FF0000;
+    }
+    .green-text {
+      color: #00FF00;
+    }
+    .dodger-blue-text {
+      color: #1E90FF;
+    }
+    .orange-text {
+      color: #FFA500;
+    }
+</style>
+  
+////
+<style>
+    .red-text {
+      color: #F00;
+    }
+    .fuchsia-text {
+      color: #F0F;
+    }
+    .cyan-text {
+      color: #0FF;
+    }
+    .green-text {
+      color: #0F0;
+    }
+  </style>
+
+////
+<style>
+    body {
+    background-color: rgb(0, 0, 0);
+    }
+</style>
+
+////
+<style>
+    .red-text {
+      color: rgb(255, 0, 0);
+    }
+    .orchid-text {
+      color: rgb(218, 112, 214);
+    }
+    .sienna-text {
+      color: rgb(160, 82, 45);
+    }
+    .blue-text {
+      color: rgb(0, 0, 255);
+    }
+</style>
+
+////
+<style>
+    .penguin {
+      --penguin-skin: gray;
+      position: relative;
+      margin: auto;
+      display: block;
+      margin-top: 5%;
+      width: 300px;
+      height: 300px;
+    }
+    
+    .penguin-top {
+      top: 10%;
+      left: 25%;
+      
+      /* change code below */
+      background: var(--penguin-skin);
+      /* change code above */
+      
+      width: 50%;
+      height: 45%;
+      border-radius: 70% 70% 60% 60%;
+      }
+</style>
+
+////
+<style>
+    :root {
+      --penguin-belly: pink;
+    }
+
+////
+<style>
+  :root {
+    --penguin-skin: gray;
+    --penguin-belly: pink;
+    --penguin-beak: orange;
+  }
+  .penguin {
+    
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 5%;
+    width: 300px;
+    height: 300px;
+    --penguin-belly: white;
+  }
+
+  ////
+  <style>
+  :root {
+    --penguin-size: 300px;
+    --penguin-skin: gray;
+    --penguin-belly: white;
+    --penguin-beak: orange;
+  }
+  
+  @media (max-width: 350px) {
+    :root {
+      --penguin-size: 200px;
+      --penguin-skin: black;
+      
+      /* add code below */
+      
+      /* add code above */
+      
+    }
+  }
+
