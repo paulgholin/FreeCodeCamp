@@ -80,48 +80,158 @@ a:hover {
     color: blue;
   }
 
-////
-<style>
-  @media (max-height: 800px) {
-  p {
-    font-size: 10px;
-  }
-  }  
-</style>
-
-////
-<!--The max-width property of 100% scales the image to fit the width of its container, 
-  but the image won't stretch wider than its original width. 
-  Setting the display property to block changes the image from an inline element 
-  (its default), to a block element on its own line. 
-  The height property of auto keeps the original aspect ratio of the image.-->
-<style>
-  img {
-  max-width: 100%;
-  display: block;
-  height: auto;
-}
-</style>
-
-//// Retina setting: define their width and height values as only half of what the original file is
-<style>
-  img { height: 100px; width: 100px; }
-</style>
-
-////
-<!--
-  vw: 10vw would be 10% of the viewport's width.
-  vh: 3vh would be 3% of the viewport's height.
-  vmin: 70vmin would be 70% of the viewport's smaller dimension (height vs. width).
-  vmax: 100vmax would be 100% of the viewport's bigger dimension (height vs. width).
--->
+//// move the h2 15 pixels to the right and 10 pixels up.
 <style>
   h2 {
-      width: 80vw;
+    position: relative;
+    left: 15px;
+    bottom: 10px; 
   }
-  p {
-      width: 75vmin; 
+</style>
+<body>
+  <h1>On Being Well-Positioned</h1>
+  <h2>Move me!</h2>
+  <p>I still think the h2 is where it normally sits.</p>
+</body>
+
+////
+<style>
+  #searchbar {
+    position: absolute; 
+    top: 50px;
+    right: 50px;
+  }
+  section {
+    position: relative;
+  }
+</style>
+<body>
+  <h1>Welcome!</h1>
+  <section>
+    <form id="searchbar">
+      <label for="search">Search:</label>
+      <input type="search" id="search" name="search">
+      <input type="submit" name="submit" value="Go!">
+    </form>
+  </section>
+</body>
+
+//// Lock an Element to the Browser 
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #767676;
+}
+
+////
+<head>
+  <style>
+  #left {
+    float: left;
+    width: 50%;
+  }
+  #right {
+    float: right;
+    width: 40%;
+  }
+  aside, section {
+    padding: 2px;
+    background-color: #ccc;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome!</h1>
+  </header>
+  <section id="left">
+    <h2>Content</h2>
+    <p>Good stuff</p>
+  </section>
+  <aside id="right">
+    <h2>Sidebar</h2>
+    <p>Links</p>
+  </aside>
+</body>
+
+////
+<style>
+  div {
+    width: 60%;
+    height: 200px;
+    margin-top: 20px;
+  }
+  
+  .first {
+    background-color: red;
+    position: absolute;
+    z-index: 2;
+  }
+  .second {
+    background-color: blue;
+    position: absolute;
+    left: 40px;
+    top: 50px;
+    z-index: 1;
   }
 </style>
 
-  
+//// Center an Element Horizontally
+<style>
+  div {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+  }
+</style>
+<div></div>
+
+<!-- Images are inline elements by default, but can be changed 
+  to block elements when you set the display property to block.-->
+
+////
+<style>
+  body {
+    background-color: white;
+  }
+  header {
+    background-color: #09A7A1;
+    color: white;
+    padding: 0.25em;
+  }
+  h2 {
+    color: #09A7A1;
+  }  
+  button {
+    background-color: #FF790E;
+  }
+  footer {
+    background-color: #09A7A1;
+    color: white;
+    padding: 0.5em;
+  }
+</style>
+
+////
+<style>
+  body {
+    background-color: #FFFFFF;
+  }
+  .green {
+    background-color: hsl(120, 100%, 50%);
+  }
+  .cyan {
+    background-color: hsl(180, 100%, 50%);
+  }
+  .blue {
+    background-color: hsl(240, 100%, 50%);
+  }
+  div {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+  }
+</style>
