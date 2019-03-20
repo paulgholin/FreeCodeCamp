@@ -1,0 +1,1 @@
+{"index.html":"<style type='text/sass'>\n  $colors: (c1: blue, c2: black, c3: red);\n  @each $k, $c in $colors {\n    .#{$c}-bg {background-color: $c;}\n  }\n\n  div {\n    height: 200px;\n    width: 200px;\n  }\n</style>\n\n<div class=\"blue-bg\"></div>\n<div class=\"black-bg\"></div>\n<div class=\"red-bg\"></div>"}
